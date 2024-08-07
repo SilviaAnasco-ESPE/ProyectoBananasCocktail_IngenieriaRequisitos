@@ -1,0 +1,344 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "Requisito6.feature:3",
+      "name": "Selecci\u00f3n de fecha disponible",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito6.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del calendario",
+          "result": {
+            "duration": 4.865967273712158,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito6.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "selecciono una fecha disponible",
+          "result": {
+            "duration": 0.2428734302520752,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito6.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:34"
+          },
+          "name": "deber\u00eda ver la informaci\u00f3n de la fecha seleccionada",
+          "result": {
+            "duration": 2.288924217224121,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito6.feature:8",
+      "name": "Intento seleccionar una fecha reservada",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito6.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del calendario",
+          "result": {
+            "duration": 4.532588005065918,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito6.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:48"
+          },
+          "name": "intento seleccionar una fecha reservada",
+          "result": {
+            "duration": 0.22432971000671387,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito6.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:56"
+          },
+          "name": "deber\u00eda ver un mensaje de error",
+          "result": {
+            "duration": 22.461954593658447,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 66, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 59, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 20).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito6.feature:13",
+      "name": "Selecci\u00f3n de fecha con disponibilidad limitada",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito6.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del calendario",
+          "result": {
+            "duration": 4.992180585861206,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito6.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:70"
+          },
+          "name": "selecciono una fecha con disponibilidad limitada",
+          "result": {
+            "duration": 10.591115951538086,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 73, in step_impl",
+              "    limited_date_card = WebDriverWait(context.driver, 10).until(",
+              "                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito6.feature:16",
+          "name": "deber\u00eda ver un mensaje de disponibilidad limitada",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito6.feature:18",
+      "name": "Hago clic en reservar ahora",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito6.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del calendario",
+          "result": {
+            "duration": 5.771171569824219,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito6.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:92"
+          },
+          "name": "hago clic en reservar ahora",
+          "result": {
+            "duration": 0.18399429321289062,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito6.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:100"
+          },
+          "name": "deber\u00eda ver la p\u00e1gina de reserva",
+          "result": {
+            "duration": 22.375879287719727,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 110, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 103, in step_impl",
+              "    reserve_page = WebDriverWait(context.driver, 20).until(",
+              "                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "Requisito6.feature:1",
+  "name": "Calendario de Reservas",
+  "status": "failed",
+  "tags": []
+}
+]
